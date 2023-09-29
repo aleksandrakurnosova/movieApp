@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h4 {
+  font-family: "Anton", sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Archivo", sans-serif;
+}
+
+/* ========================== header ========================== */
+header {
+  background-color:rgba(112, 26, 117, 1);
+}
+.form {
+  display: flex;
+  gap: 1rem;
+}
+.logo {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 30px;
+}
+
+.material-symbols-outlined {
+  color: white;
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+  
+  }
+}
+
+.header-h1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 0;
+  font-size: 50px;
+  color: white;
+}
+@media (max-width: 768px) {
+  .header-h1 {
+    font-size: 36px;
+  }
+}
+
+/* header-library */
+.header-flex-library{
+  display: flex;
+  justify-content:center;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-transparent {
+  border: 1px white solid;
+  background-color: transparent;
+  color: white;
+}
+.btn-transparent:hover{
+  background-color: white;
+  color: rgba(112, 26, 117, 1);
+}
+
+.btn-color{
+  color: rgba(112, 26, 117, 1);
+  background-color: transparent;
+  border: 1px solid rgba(112, 26, 117, 1);
+}
+.btn-color:hover{
+  color:white;
+  background-color: rgba(112, 26, 117, 1);
+  border: 1px solid rgba(112, 26, 117, 1);
+}
+
+.input-header {
+  border: 0;
+  width: 515px;
+ 
+}
+.img-header {
+  width: 600px;
+}
+
+.query-warning{
+  margin: 10px 0;
+  color: #fff;
+}
+.query-warning:hover{
+  text-shadow: 0 4px 10px rgba(255, 255, 255, 10);
+}
+
+/* ========================== main ========================== */
+
+main{
+  background-color:  rgba(241, 245, 249, 1);
+  padding: 60px 0;
+}
+
+#mainSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* header-library */
+
+#mainSectionLib {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  #mainSection,#mainSectionLib  {
+    justify-content: center;
+  }
+}
+
+
+/* Movies Box styling */
+
+.card {
+  margin: 0.7rem;
+  width: 15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: rgba(241, 245, 249, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Movie image */
+.movie-image{
+  display: flex;
+
+}
+.card img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+/* Movie Basic info */
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  color: #eee;
+  padding: 0.8rem;
+  align-items: center;
+  max-height: 100%;
+}
+
+.movie-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.movie-title {
+  font-size: 1.1rem;
+  color: black;
+  cursor: pointer;
+}
+
+.movie-rated {
+  background-color: rgba(112, 26, 117, 1);
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* ========================== modal ========================== */
+.modal {
+  color: black;
+}
+.modal-header{
+  background-color: rgba(241, 245, 249, 1);
+}
+.modal-title{
+  color:rgba(71, 85, 105, 1) ;
+  font-size: 30px;
+  padding: 0;
+}
+.modal-body{
+  background-color: rgba(241, 245, 249, 1);
+
+}
+.modal-footer{
+  background-color: rgba(241, 245, 249, 1);
+}
+
+.movie-genres {
+  font-size: 13px;
+}
+.modal-body p {
+  font-size: 1.1rem;
+}
+
+.movie-poster {
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.genre-p{
+  font-size: 10px;
+}
+
+/* ========================== pagination ========================== */
+
+.pagination-container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+ 
+}
+.pagination-button{
+  color: #eee;
+  background-color: rgba(112, 26, 117, 1) ;
+}
+.pagination-numbers {
+  background-color: rgba(241, 245, 249, 1);
+  color:rgba(112, 26, 117, 1) ;
+  padding: 0 20px;
+}
+
+.pagination-numbers:hover {
+  background-color: rgba(112, 26, 117, 1) ;
+  color:white;
+}
+
+/* ========================== footer ========================== */
+
+footer {
+  background-color: rgba(71, 85, 105, 1);
+  padding: 2rem 0;
+}
+.footer-text {
+  color: white;
+}
+footer p{
+  margin: 0;
+}
+
+
+
